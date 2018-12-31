@@ -4,5 +4,25 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+<br />
+<h2 class="text-info">Create New Book</h2>
+<br />
+
+<div class="border">
+    <form method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="container" style="padding:30px;">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <label asp-for="Book.Name"></label>
+                    </div>
+                    <div class="col-sm-4">
+                        <input asp-for="Book.Name" class="form-control" />
+                    </div>
+                </div>
+            </div>
+        </div>
+</form>
+</div>
 
